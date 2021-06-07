@@ -1,0 +1,59 @@
+@import '../../variable.scss';
+
+.hero-carousel {
+	.slide {
+		position: relative;
+
+		.contents {
+      color: $primary-color;
+      background-color: $grey-color;
+      padding-bottom: 40px;
+      
+      button {
+        background: black;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 13px 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+        padding: 10px 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+		}	
+	}
+  
+	@media (min-width: $sm-width) {
+    .slide {
+      .contents {
+        position: absolute;
+        background-color: transparent;
+        z-index: 10;
+        text-align: left;
+        top: 50%;
+        left: 130px;
+        transform: translateY(-50%);
+  
+        &.white {
+          color: white;
+        }
+        
+        h1 {
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 26px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+	}
+}

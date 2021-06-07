@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnnounceBar, Header } from '../../components';
+import { AnnounceBar, Header, HeroCarousel } from '../../components';
 import './Home.scss';
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
 		<div>
 			<AnnounceBar />
 			<Header />
+			<HeroCarousel />
 		</div>
 	)
 }
