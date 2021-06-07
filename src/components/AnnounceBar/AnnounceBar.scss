@@ -1,0 +1,15 @@
+@import '../../variable.scss';
+
+.announce-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: black;
+	color: white;
+	height: 46px;
+	font-size: 14px;
+
+	@media (min-width: $sm-width) {
+		height: 58px;
+	}
+}

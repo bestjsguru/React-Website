@@ -1,9 +1,13 @@
 import React from 'react';
+import { AnnounceBar, Header } from '../../components';
 import './Home.scss';
 
 const Home = () => {
 	return (
-		<h1> Home </h1>
+		<div>
+			<AnnounceBar />
+			<Header />
+		</div>
 	)
 }
 

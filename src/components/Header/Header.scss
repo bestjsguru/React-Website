@@ -1,0 +1,72 @@
+@import '../../variable.scss';
+
+.header {
+	display: flex;
+	height: 64px;
+	background: $primary-color;
+	color: white;
+	align-items: center;
+	padding: 0 25px;
+
+	.right-side-bar {
+		margin-left: auto;
+
+		button {
+			margin-left: 20px;
+		}
+	}
+
+	.menu {
+		margin-right: 25px;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.logo-icon {
+		width: 56px;
+	}
+
+	@media (min-width: $sm-width) {
+		height: 138px; 
+		padding: 0 48px;
+
+		.mobile {
+			display: none;
+		}
+
+		.desktop {
+			display: flex; 
+
+		}
+		
+		.navigation {
+			margin-left: auto;
+			
+			li {
+				list-style-type: none;
+				margin: 0 30px;
+				font-size: 20px;
+				cursor: pointer;
+			}
+		}
+
+		.logo-icon {
+			width: 93px;
+		}
+
+		.right-side-bar {
+			button {
+				margin-left: 35px;
+			}
+		}
+	}
+}
