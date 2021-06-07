@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), url(./assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'), url(./assets/fonts/Lobster-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: 'Lato';
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster';
+}
