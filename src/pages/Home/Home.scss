@@ -10,3 +10,29 @@
 		padding: 50px;
 	}
 }
+
+.instagram-section, .product-section {
+	padding: 8px;
+	
+	@media (min-width: $sm-width) {
+		padding: 100px;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 26px;
+
+		@media (min-width: $sm-width) {
+			font-size: 60px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.wrapper {
+		padding: 5px;
+
+		@media (min-width: $sm-width) {
+			padding: 13px;
+		}
+	}
+}

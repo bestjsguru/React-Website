@@ -1,0 +1,14 @@
+@import '../../variable.scss';
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	background: black;
+	color: white;
+	padding: 20px;
+
+	@media (min-width: $sm-width) {
+		flex-direction: row;
+		padding: 60px 48px;
+	}
+}

@@ -1,0 +1,42 @@
+@import '../../variable.scss';
+
+.subscriber-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 14px;
+	width: 50%;
+	flex-direction: column;
+	margin: auto;
+
+	input {
+		display: none;
+	}
+
+	button {
+		margin-top: 50px;
+		background: transparent;
+		border: 1px solid white;
+		color: white;
+		padding: 13px 28px;
+	}
+	
+	@media (min-width: $sm-width) {
+		flex-direction: row;
+
+		input {
+			height: 24px;
+			font-size: 22px;
+			padding: 17px;
+			width: 60%;
+			display: block;
+		}
+		button {
+			margin-top: 0;
+			padding: 20px 28px;
+			margin-left: 10px;
+			border-width: 2px;
+		}
+	}
+}

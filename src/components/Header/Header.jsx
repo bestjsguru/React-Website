@@ -4,7 +4,7 @@ import LogoIcon from '../../assets/images/icon_logo.svg';
 import SearchIcon from '../../assets/images/icon_search.svg';
 import UserIcon from '../../assets/images/icon_user.svg';
 import CartIcon from '../../assets/images/icon_cart.svg';
-import navigation from '../../navigation';
+import { mainNavigation } from '../../navigation';
 import './Header.scss';
 
 const Header = () => {
@@ -13,11 +13,11 @@ const Header = () => {
 			<button className="mobile menu">
 				<img className="menu-icon" src={BurgerIcon} alt="menu" />
 			</button>
-			<a href="#">
+			<a href="/">
 				<img className="logo-icon" src={LogoIcon} alt="logo" />
 			</a>
 			<ul className="desktop navigation">
-				{navigation.map(item => (
+				{mainNavigation.map(item => (
 					<li>{item}</li>
 				))
 				}

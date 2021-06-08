@@ -1,4 +1,5 @@
 import React from 'react';
+import { HeroSection } from '../';
 import { Carousel } from 'react-responsive-carousel';
 import HeroImage1 from '../../assets/images/hero1.png';
 import HeroImage2 from '../../assets/images/hero2.png';
@@ -11,30 +12,26 @@ const HeroCarousel = () => {
 	return (
 		<div className="hero-carousel">
 			<Carousel showThumbs={false}>
-				<div className="slide">
-					<img src={HeroImage1} />
-					<div className="contents">
-						<h1>Shop New Arrivals</h1>
-						<p>Our coolest new items are waiting for you.</p>
-						<button>SHOP NOW</button>
-					</div>
-				</div>
-				<div className="slide">
-					<img src={HeroImage2} />
-					<div className="contents white">
-						<h1>Our Fave Tees</h1>
-						<p>Shop all of our favourites.</p>
-						<button>SHOP NOW</button>
-					</div>
-				</div>
-				<div className="slide">
-					<img src={HeroImage3} />
-					<div className="contents white">
-						<h1>Men's Tees</h1>
-						<p>Find the perfect shirt.</p>
-						<button>SHOP NOW</button>
-					</div>
-				</div>
+				<HeroSection 
+					img={HeroImage1}  
+					header={'Shop New Arrivals'}
+					description={'Our coolest new items are waiting for you.'}
+					btnText={'SHOP NOW'}
+				/>
+				<HeroSection 
+					img={HeroImage2}  
+					header={'Our Fave Tees'}
+					description={'Shop all of our favourites.'}
+					btnText={'SHOP NOW'}
+					light
+				/>
+				<HeroSection 
+					img={HeroImage3}  
+					header={"Men's Tees"}
+					description={'Find the perfect shirt.'}
+					btnText={'SHOP NOW'}
+					light
+				/>
 			</Carousel>
 		</div>
 	)
