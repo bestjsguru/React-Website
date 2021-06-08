@@ -1,0 +1,43 @@
+@import '../../variable.scss';
+
+.collection-card {
+	cursor: pointer;
+	padding: 5px;
+	flex: 1;
+	min-width: 40%;
+
+	@media (min-width: $sm-width) {
+		height: 114px;
+		min-width: 30%;
+		padding: 10px;
+	}
+
+	.image-wrapper {
+		max-height: 200px;
+		overflow: hidden;
+
+		@media (min-width: $sm-width) {
+			max-height: none;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 42px;
+		background: $primary-color;
+		color: white;
+		font-size: 20px;
+		
+		@media (min-width: $sm-width) {
+			margin-top: -5px;
+			height: 114px;
+			font-size: 40px;
+		}
+	}
+}
