@@ -1,4 +1,5 @@
 import React from 'react';
+import { SearchBar } from '..';
 import BurgerIcon from '../../assets/images/icon_menu.svg';
 import LogoIcon from '../../assets/images/icon_logo.svg';
 import SearchIcon from '../../assets/images/icon_search.svg';
@@ -8,6 +9,8 @@ import { mainNavigation } from '../../navigation';
 import './Header.scss';
 
 const Header = () => {
+	const [showSearch, setShowSearch] = React.useState(false);
+
 	return (
 		<div className="header">
 			<button className="mobile menu">
@@ -23,7 +26,10 @@ const Header = () => {
 				}
 			</ul>
 			<div className="right-side-bar">
-				<button className="right-menu">
+				{showSearch &&
+					<SearchBar onSearch={()=>setShowSearch(false)}/>
+				}
+				<button className="right-menu" onClick={()=>setShowSearch(!showSearch)}>
 					<img className="menu-icon" src={SearchIcon} alt="menu" />
 				</button>
 				<button className="right-menu">

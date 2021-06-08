@@ -1,0 +1,42 @@
+@import '../../variable.scss';
+
+.search-bar {
+	display: flex;
+	position: absolute;
+	bottom: -42px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	background: white;
+	padding: 3px;	
+
+	button {
+		padding: 10px;
+		color: white;
+		background: black;
+		margin: 0;
+	}
+	input {
+		min-width: 180px;
+	}
+	
+	@media (min-width: $sm-width) {
+		padding: 0;
+		left: auto;
+		right: 35px;
+		bottom: auto;
+		top: 52px;
+		
+		input {
+			height: 12px;
+			font-size: 12px;
+			padding: 10px;
+			width: 60%;
+			display: block;
+		}
+
+		button {
+			font-size: 12px;
+		}
+	}
+}

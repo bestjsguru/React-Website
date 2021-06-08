@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 import FooterMenu from './FooterMenu/FooterMenu';
 import SocialMenu from './SocialMenu/SocialMenu';
 import Subscriber from './Subscriber/Subscriber';
+import SearchBar from './SearchBar/SearchBar';
 import SubscribeSection from './SubscribeSection/SubscribeSection';
 
-export { AnnounceBar, Header, HeroCarousel, HeroSection, CollectionCard, ProductCard, Footer, FooterMenu, SocialMenu, SubscribeSection, Subscriber };
+export { AnnounceBar, Header, SearchBar, HeroCarousel, HeroSection, CollectionCard, ProductCard, Footer, FooterMenu, SocialMenu, SubscribeSection, Subscriber };

@@ -1,6 +1,7 @@
 @import '../../variable.scss';
 
 .header {
+	position: relative;
 	display: flex;
 	height: 64px;
 	background: $primary-color;
@@ -9,9 +10,10 @@
 	padding: 0 25px;
 
 	.right-side-bar {
+		display: flex;
 		margin-left: auto;
 
-		button {
+		button.right-menu {
 			margin-left: 20px;
 		}
 	}
@@ -64,7 +66,7 @@
 		}
 
 		.right-side-bar {
-			button {
+			button.right-menu {
 				margin-left: 35px;
 			}
 		}
