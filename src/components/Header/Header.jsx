@@ -12,7 +12,7 @@ import './Header.scss';
 
 const Header = () => {
 	const [showSearch, setShowSearch] = React.useState(false);
-	const [showMenu, setShowMenu] = React.useState(true);
+	const [showMenu, setShowMenu] = React.useState(false);
 	const otherMenus = [menuForBottom, menuForTop];
 
 	return (
