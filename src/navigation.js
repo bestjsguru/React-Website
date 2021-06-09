@@ -50,4 +50,58 @@ const menu2 = {
   ]
 }
 
-export { mainNavigation, menu1, menu2 };
+const menuForTop = {
+  title: 'TOPS',
+  items: [
+    {
+      label: 'T-Shirt',
+      link: '#'
+    },
+    {
+      label: 'Short Sleeve',
+      link: '#'
+    },
+    {
+      label: 'Long Sleeve',
+      link: '#'
+    }
+  ]
+}
+
+const menuForBottom = {
+  title: 'BOTTOMS',
+  items: [
+    {
+      label: 'Shorts',
+      link: '#'
+    },
+    {
+      label: 'Pants',
+      link: '#'
+    }
+  ]
+}
+
+const menuForCollections = {
+  title: 'Collection',
+  items: [
+    {
+      label: 'Shop All',
+      link: '#'
+    },
+    {
+      label: 'New Arrivals',
+      link: '#'
+    },
+    {
+      label: 'Favorites',
+      link: '#'
+    },
+    {
+      label: 'Sale',
+      link: '#'
+    }
+  ]
+}
+
+export { mainNavigation, menu1, menu2, menuForBottom, menuForTop, menuForCollections };
